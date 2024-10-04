@@ -1,0 +1,196 @@
+body{
+    font-family: Arial, sans-serif;
+}
+h2, h3{
+    text-align: center;
+    margin:5px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.pageHeader{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.mainMenu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainMenu li{
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
+@media(max-width: 950px){
+    .mainMenu li{
+        flex: 30%;
+    }    
+}
+
+.mainMenu li:last-child::after {
+    content: "";
+    position: absolute;
+    z-index: 1;    
+    margin-left: 10px;
+    margin-top: 10px;
+
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(2, 255, 213) transparent transparent transparent;
+}
+/*----------------------------------------------------------------------*/
+.mainAdvertisement{
+    display: flex;
+    justify-content: space-between;
+}
+.mainAdvertisement img{
+    width: 20%;
+    align-self: flex-end;
+    /*height:350px;*/
+}
+.programDescription{
+    max-width: 50%;
+    /*margin-left: 50%;*/
+    flex: 50%;
+    list-style-image: url('images/bullet.png') ;
+}
+.itemHeader{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+}
+.itemDescription{
+    font-size: 20px;
+    color: rgb(87, 87, 87);
+}
+/*----------------------------------------------------------------------*/
+.graduatorsBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;       
+    background-color: rgb(46, 46, 46);
+
+}
+.graduatorsList{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:15px;
+    
+}
+.graduator {
+   flex: 30%; 
+   /*max-width: 30%;*/
+}
+@media(max-width: 950px){
+    .graduator {
+        flex: 40%;         
+     }
+}
+.graduator img{
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+/*----------------------------------------------------------------------*/
+.frequentQuestions{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.frequentQuestionsList{
+    display: flex;    
+}
+.frequentQuestionsColumn{    
+    flex:20%;
+    display: flex;
+    flex-direction: column;
+
+
+    gap: 10px;
+}
+.frequentQuestionsImage{    
+    flex:60%;
+    display: flex; 
+    justify-content: center;
+}
+
+.frequentQuestionsImage img{
+    max-width: 50%;
+    align-self: center;
+    height: auto;
+}
+@media(max-width: 1100px){
+    .frequentQuestionsImage {
+        flex: 30%;         
+    }
+    .frequentQuestionsImage img{
+        max-width: 100%;        
+    }
+}
+
+
+.questionBox{    
+    display: flex;
+    flex-direction: column;    
+    padding: 15px;  
+    height: 33%;    
+}
+.questionHead{
+    display: flex;
+    align-items: center;    
+}
+.questionNumber{
+    font-size: 45px;
+    font-weight: 900;
+    color: dodgerblue;
+    margin: 0;
+}
+.questionTitle{
+    color: orange;
+    font-weight: 900;
+    text-transform: uppercase;
+    float: left;
+}
+.questionDescription{
+    font-size: 20px;
+    color: rgb(48, 48, 48);    
+}
+/*----------------------------------------------------------------------*/
+.conclusion{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 150, 56);
+
+}
+.conclusionHeader{
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.conclusionDescription{
+    display: flex;
+    align-items: center;
+}
+.conclusionDescription p{
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 900;
+}
+.java{
+    position: absolute; 
+    text-transform: capitalize;
+    z-index: -1;
+    top:20px; left: 70%; 
+    font-size: 80px; 
+    color: rgb(207, 207, 207);
+}
